@@ -16,7 +16,8 @@ Game.prototype.winner = function() {
 
   if(this.RULES[this.player1.choice]['beats'] === this.computer.choice) {
     return this.player1;
-  } else {
+  }
+  else {
     return this.computer;
   }
 };

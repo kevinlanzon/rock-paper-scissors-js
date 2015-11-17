@@ -1,3 +1,7 @@
+languages:
+  Ruby: true
+  JavaScript: true
+  PHP: true
+  Python: true
 exclude_paths:
-- lib/jasmine-2.3.4/jasmine.js
-- lib/jasmine-2.3.4/jasmine-html.js
+- "lib/jasmine-2.3.4/jasmine.js"
