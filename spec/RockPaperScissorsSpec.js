@@ -50,4 +50,17 @@ describe('Rock Paper Scissors', function() {
       });
     });
   });
+
+  describe('draws', function() {
+    describe('identical choices', function() {
+      it('should result in no winner', function(){
+        var drawResults = ['rock', 'paper', 'scissors'].map(function(i) {
+          player1.chooses(i);
+          player2.chooses(i);
+          return game.winner();
+        });
+        expect(drawResults).toEqual([null, null, null]);
+      });
+    });
+  });
 });

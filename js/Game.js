@@ -10,8 +10,14 @@ RULES = {
 }
 
 Game.prototype.winner = function() {
+  if(this.sameChoice()) return null;
+
   if(RULES[this.player1.choice]['beats'] === this.player2.choice) {
     return this.player1;
   }
   return this.player2;
+};
+
+Game.prototype.sameChoice = function() {
+  return this.player1.choice === this.player2.choice;
 };
