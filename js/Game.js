@@ -4,8 +4,9 @@ function Game(player1, player2) {
 }
 
 RULES = {
-  rock:  {beats: 'scissors'},
-  paper: {beats: 'rock'}
+  rock:     {beats: 'scissors'},
+  paper:    {beats: 'rock'},
+  scissors: {beats: 'paper'}
 }
 
 Game.prototype.winner = function() {
