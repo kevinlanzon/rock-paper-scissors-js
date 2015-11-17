@@ -14,6 +14,12 @@ describe('Rock Paper Scissors', function() {
         player2.choice('scissors');
         expect(game.winner()).toBe(player1);
       });
+
+      it('should lose to paper', function() {
+        player1.choice('rock');
+        player2.choice('paper');
+        expect(game.winner()).toBe(player2);
+      });
     });
   });
 });

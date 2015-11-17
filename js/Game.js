@@ -3,6 +3,14 @@ function Game(player1, player2) {
   this.player2 = player2;
 }
 
+RULES = {
+  rock:  {beats: 'scissors'},
+  paper: {beats: 'rock'}
+}
+
 Game.prototype.winner = function() {
-  return this.player1;
+  if(RULES[this.player1.choice]['beats'] === this.player2.choice) {
+    return this.player1;
+  }
+  return this.player2;
 };
