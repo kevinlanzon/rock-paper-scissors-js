@@ -1,10 +1,20 @@
 describe('Rock Paper Scissors', function() {
-  var player1, player2, game;
+  var player1, player2, computer, game;
 
   beforeEach(function() {
     player1 = new Player('Kev');
     player2 = new Player('Bob');
+    computer = new Computer('Mac');
     game = new Game(player1, player2);
+  });
+
+  describe('computer', function () {
+    describe('when playing', function() {
+      it('should make a random choice', function() {
+        computer.chooses();
+        expect(computer.choice).not.toBe(null);
+      });
+    });
   });
 
   describe('winning and losing', function() {

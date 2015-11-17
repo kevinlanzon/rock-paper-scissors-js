@@ -1,6 +1,6 @@
-function Game(player1, player2) {
+function Game(player1, computer) {
   this.player1 = player1;
-  this.player2 = player2;
+  this.computer = computer;
 }
 
 Game.prototype.RULES = {
@@ -10,14 +10,17 @@ Game.prototype.RULES = {
 };
 
 Game.prototype.winner = function() {
-  if(this._sameChoice()) return null;
-
-  if(this.RULES[this.player1.choice]['beats'] === this.player2.choice) {
-    return this.player1;
+  if(this._sameChoice()) {
+    return null;
   }
-  return this.player2;
+
+  if(this.RULES[this.player1.choice]['beats'] === this.computer.choice) {
+    return this.player1;
+  } else {
+    return this.computer;
+  }
 };
 
 Game.prototype._sameChoice = function() {
-  return this.player1.choice === this.player2.choice;
+  return this.player1.choice === this.computer.choice;
 };
