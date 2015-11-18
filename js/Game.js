@@ -1,8 +1,8 @@
 "use strict";
 
-function Game(player1, computer) {
+function Game(player1, player2) {
   this.player1 = player1;
-  this.computer = computer;
+  this.player2 = player2;
 }
 
 Game.prototype.RULES = {
@@ -16,25 +16,25 @@ Game.prototype.winner = function() {
     return null;
   }
 
-  if(this.RULES[this.player1.choice]['beats'] === this.computer.choice) {
+  if(this.RULES[this.player1.choice]['beats'] === this.player2.choice) {
     return this.player1;
   }
   else {
-    return this.computer;
+    return this.player2;
   }
 };
 
 Game.prototype.loser = function() {
   if(this.winner() === this.player1){
-    return this.computer;
+    return this.player2;
   }
   else {
-    return this.computer;
+    return this.player2;
   }
 };
 
 Game.prototype._sameChoice = function() {
-  return this.player1.choice === this.computer.choice;
+  return this.player1.choice === this.player2.choice;
 };
 
 Game.prototype.message = function() {
