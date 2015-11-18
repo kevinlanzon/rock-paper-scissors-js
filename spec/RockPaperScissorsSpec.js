@@ -8,15 +8,7 @@ describe('Rock Paper Scissors', function() {
     game = new Game(player1, player2);
   });
 
-  describe('computer', function () {
-    describe('when playing', function() {
-      it('should randomly choose a weapon and return a string', function() {
-        expect(computerChoice.computer()).toEqual(jasmine.any(String));
-      });
-    });
-  });
-
-  describe('winning and losing', function() {
+  describe('Rules of the game', function() {
     describe('rock', function() {
       it('should beat scissors', function() {
         player1.chooses('rock');
@@ -58,10 +50,8 @@ describe('Rock Paper Scissors', function() {
         expect(game.winner()).toBe(player2);
       });
     });
-  });
 
-  describe('draws', function() {
-    describe('identical choices', function() {
+    describe('a draw', function() {
       it('should result in no winner', function() {
         var drawResults = ['rock', 'paper', 'scissors'].map(function(i) {
           player1.chooses(i);
@@ -69,7 +59,30 @@ describe('Rock Paper Scissors', function() {
           return game.winner();
         });
         expect(drawResults).toEqual([null, null, null]);
+        expect(game.message()).toEqual('The Game is a Draw!');
       });
+    });
+  });
+
+  describe('Computer', function () {
+    describe('when playing', function() {
+      it('should randomly choose a weapon and return a string', function() {
+        expect(computerChoice.computer()).toEqual(jasmine.any(String));
+      });
+    });
+  });
+
+  describe('Messages', function() {
+    it('should return the winners name and the losers name', function() {
+      player1.chooses('paper');
+      player2.chooses('rock');
+      expect(game.message()).toEqual('Kev Beats Bob');
+    });
+
+    it('should return a message for a draw', function() {
+      player1.chooses('paper');
+      player2.chooses('paper');
+      expect(game.message()).toEqual('The Game is a Draw!');
     });
   });
 });
