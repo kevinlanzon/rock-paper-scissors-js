@@ -4,15 +4,14 @@ describe('Rock Paper Scissors', function() {
   beforeEach(function() {
     player1 = new Player('Kev');
     player2 = new Player('Bob');
-    computer = new Computer('Mac');
+    computerChoice = new Player('Mac');
     game = new Game(player1, player2);
   });
 
   describe('computer', function () {
     describe('when playing', function() {
-      it('should make a random choice', function() {
-        computer.chooses();
-        expect(computer.choice).not.toBe(null);
+      it('should randomly choose a weapon and return a string', function() {
+        expect(computerChoice.computer()).toEqual(jasmine.any(String));
       });
     });
   });

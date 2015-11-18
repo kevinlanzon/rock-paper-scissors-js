@@ -6,11 +6,9 @@ Player.prototype.chooses = function(choice) {
   this.choice = choice;
 };
 
-function Computer(name) {
-  this.name = name;
-}
 
-Computer.prototype.chooses = function() {
+Player.prototype.computer = function() {
   var choices = ['rock', 'paper', 'scissors']
-  this.choice = choices[Math.floor(Math.random() * choices.length)];
+  this.computerChoice = choices[Math.floor(Math.random() * choices.length)];
+  return this.computerChoice;
 };
