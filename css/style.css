@@ -76,6 +76,21 @@ WEAPONS
   opacity: 1;
 }
 
+button {
+  margin-left: 10px;
+  background: #000;
+  color: #fff;
+  font-size: 24px;
+  border-radius: 8px;
+  padding: 5px;
+  width: 90%;
+  margin-bottom: 10px;
+  text-align: center;
+  box-shadow: 10px 10px 5px #888;
+  width: 856px;
+  height: 42px;
+}
+
 
 
 /********************************************

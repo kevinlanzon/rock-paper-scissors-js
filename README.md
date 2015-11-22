@@ -6,7 +6,7 @@ Rock, Paper, Scissors
 
 A JavaScript version of Rock, Paper, Scissors. My goal in the building of this game was to create the game logic using minimal conditional statements whilst making it easily extendable to include the Lizard and Spock choices for weapons.
 
-###User story front
+###User story
 
 ####Title: Waste an hour having fun
 - As a frequent games player,
@@ -15,7 +15,7 @@ A JavaScript version of Rock, Paper, Scissors. My goal in the building of this g
 
 ####Acceptance Criteria
 - [x] Can I play Player v Computer?
-- [ ] Can I play Computer v Computer?
+- [x] Can I play Computer v Computer?
 - [x] Can I play a different game each time?
 
 Technologies used
