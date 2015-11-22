@@ -9,16 +9,16 @@ document.addEventListener('DOMContentLoaded', function() {
   [].forEach.call(document.querySelectorAll('img'), function(el) {
     el.addEventListener('click', function() {
 
-      player1.chooses(this.getAttribute('data-choice'));
-      player2.chooses(player2.random());
+    player1.chooses(this.getAttribute('data-choice'));
+    player2.chooses(player2.random());
 
-      var el = document.getElementById('results'),
-      elChild = document.createElement('div');
-      elChild.innerHTML = '<li>' + game.message() + '</li>';
-      el.insertBefore(elChild, el.firstChild);
-      console.log(player1);
-      console.log(player2);
-      console.log(game.message());
+    var el = document.getElementById('results'),
+    elChild = document.createElement('div');
+    elChild.innerHTML = '<li>' + game.message() + '</li>';
+    el.insertBefore(elChild, el.firstChild);
+    console.log(player1);
+    console.log(player2);
+    console.log(game.message());
 
     }, false);
 
