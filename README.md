@@ -39,5 +39,25 @@ How to run tests
 $ cd rockPaperScissors-js
 $ open SpecRunner.html
 ```
+File Structure
+----------------
+```
+- css
+  - normalize.css
+  - style.css
+- img
+- js
+  - Computer.js
+  - Display.js
+  - Game.js
+  - Player.js
+- lib
+  - jasmine-2.3.4
+- spec
+  - RockPaperScissorsSpec.js
+- index.html
+- SpecRunner.html
+
+```
 ####To do
 - [ ] Refactor Computer.js into Display.js (DRY!)
