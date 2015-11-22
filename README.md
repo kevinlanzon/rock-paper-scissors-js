@@ -4,15 +4,17 @@
 Rock, Paper, Scissors
 ========
 
-#User story front
-Title: Waste an hour having fun
-As a frequent games player,
-I’d like to play rock, paper, scissors
-So that I can spend an hour of my day having fun.
-Acceptance Criteria
+###User story front
+
+####Title: Waste an hour having fun
+- As a frequent games player,
+- I’d like to play rock, paper, scissors
+- So that I can spend an hour of my day having fun.
+
+####Acceptance Criteria
 - [x] Can I play Player v Computer?
 - [ ] Can I play Computer v Computer?
-- [x]Can I play a different game each time?
+- [x] Can I play a different game each time?
 
 Technologies used
 ----
