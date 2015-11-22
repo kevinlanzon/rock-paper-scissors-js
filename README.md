@@ -39,3 +39,5 @@ How to run tests
 $ cd rockPaperScissors-js
 $ open SpecRunner.html
 ```
+####To do
+- [ ] Refactor Computer.js into Display.js (DRY!)
