@@ -30,7 +30,7 @@ How to run
 ----
 ```sh
 $ git clone git@github.com:kevinlanzon/rockPaperScissors-js.git
-cd rockPaperScissors-js
+$ cd rockPaperScissors-js
 $ open index.html
 ```
 
