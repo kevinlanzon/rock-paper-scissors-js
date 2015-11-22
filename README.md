@@ -30,13 +30,13 @@ How to run
 ----
 ```sh
 $ git clone git@github.com:kevinlanzon/rockPaperScissors-js.git
+cd rockPaperScissors-js
 $ open index.html
 ```
 
 How to run tests
 ----
 ```sh
-$ cd rockPaperScissors-js
 $ open SpecRunner.html
 ```
 File Structure
