@@ -4,6 +4,8 @@
 Rock, Paper, Scissors
 ========
 
+A JavaScript version of Rock, Paper, Scissors. My goal in the building of this game was to create the game logic using minimal conditional statements whilst making it easily extendable to include the Lizard and Spock choices for weapons.
+
 ###User story front
 
 ####Title: Waste an hour having fun
