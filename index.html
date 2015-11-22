@@ -5,15 +5,19 @@
   <title>Rock Paper Scissors</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/Game.js"></script>
-  <script src="js/Player.js"></script>
 </head>
 <body>
-  <h1>Rock Paper Scissors</h1>
-  <div class="choices">
-    <img src="img/rock.png">
-    <img src="img/paper.png">
-    <img src="img/scissors.png">
-  </div>
+  <section class="game">
+    <h1>Rock Paper Scissors</h1>
+      <section id="choices">
+        <img src="img/rock.png" data-choice='rock'>
+        <img src="img/paper.png" data-choice='paper'>
+        <img src="img/scissors.png" data-choice='scissors'>
+      </section>
+    <h2>Choose your weapon!</h2>
+  </section>
+  <ul id="results"></ul>
+  <script src="js/Game.js"></script>
+  <script src="js/Player.js"></script>
 </body>
 </html>

@@ -8,8 +8,7 @@ Player.prototype.chooses = function(choice) {
   this.choice = choice;
 };
 
-Player.prototype.computer = function() {
+Player.prototype.random = function() {
   var choices = ['rock', 'paper', 'scissors']
-  this.computerChoice = choices[Math.floor(Math.random() * choices.length)];
-  return this.computerChoice;
+  return choices[Math.floor(Math.random() * choices.length)];
 };

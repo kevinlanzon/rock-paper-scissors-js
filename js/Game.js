@@ -25,12 +25,7 @@ Game.prototype.winner = function() {
 };
 
 Game.prototype.loser = function() {
-  if(this.winner() === this.player1){
-    return this.player2;
-  }
-  else {
-    return this.player2;
-  }
+  return (this.winner() === this.player1 ? this.player2 : this.player1);
 };
 
 Game.prototype._sameChoice = function() {
@@ -39,9 +34,9 @@ Game.prototype._sameChoice = function() {
 
 Game.prototype.message = function() {
   if(this._sameChoice() === true) {
-    return "The Game is a Draw!";
+    return 'The Game is a Draw!';
   }
   else {
-    return ((this.winner()).name + ' '  + 'Beats' + ' '  + (this.loser()).name);
+    return this.winner().name + "'s " + this.winner().choice + " " + "beats" + " " + this.loser().name + "'s " + this.loser().choice;
   };
 };

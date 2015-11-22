@@ -4,7 +4,7 @@ describe('Rock Paper Scissors', function() {
   beforeEach(function() {
     player1 = new Player('Kev');
     player2 = new Player('Bob');
-    computerChoice = new Player('Mac');
+    computer = new Player('Mac');
     game = new Game(player1, player2);
   });
 
@@ -67,7 +67,7 @@ describe('Rock Paper Scissors', function() {
   describe('Computer', function () {
     describe('when playing', function() {
       it('should randomly choose a weapon and return a string', function() {
-        expect(computerChoice.computer()).toEqual(jasmine.any(String));
+        expect(computer.random()).toEqual(jasmine.any(String));
       });
     });
   });
@@ -76,7 +76,7 @@ describe('Rock Paper Scissors', function() {
     it('should return the winners name and the losers name', function() {
       player1.chooses('paper');
       player2.chooses('rock');
-      expect(game.message()).toEqual('Kev Beats Bob');
+      expect(game.message()).toEqual('Kev\'s paper beats Bob\'s rock');
     });
 
     it('should return a message for a draw', function() {
