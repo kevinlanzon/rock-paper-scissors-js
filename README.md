@@ -24,10 +24,11 @@ Technologies used
 - HTML5
 - CSS3
 
-How to clone this repo
+How to run
 ----
 ```sh
 $ git clone git@github.com:kevinlanzon/rockPaperScissors-js.git
+$ open index.html
 ```
 
 How to run tests
