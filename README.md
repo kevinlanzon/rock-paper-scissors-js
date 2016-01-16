@@ -26,6 +26,10 @@ Technologies used
 - HTML5
 - CSS3
 
+Play the game live
+-----
+[Rock, Paper, Scissors](https://lanzon-rock-paper-scissors.herokuapp.com/)
+
 How to run
 ----
 ```sh
