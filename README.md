@@ -26,6 +26,12 @@ Technologies used
 - HTML5
 - CSS3
 
+Screenshot
+---
+<div align="center">
+  <img width="100%" src="/public/img/screen-shot.png">
+</div>
+
 Play the game live
 -----
 [Rock, Paper, Scissors](https://lanzon-rock-paper-scissors.herokuapp.com/)
