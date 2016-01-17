@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/kevinlanzon/rockPaperScissors-js.svg?branch=master)](travis-ci.org/kevinlanzon/rockPaperScissors-js)
+[![Build Status](https://travis-ci.org/kevinlanzon/rock-paper-scissors-js.svg?branch=master)](https://travis-ci.org/kevinlanzon/rock-paper-scissors-js)
 [![Code Climate](https://codeclimate.com/github/kevinlanzon/rockPaperScissors-js/badges/gpa.svg)](https://codeclimate.com/github/kevinlanzon/rockPaperScissors-js)
 
 Rock, Paper, Scissors
